@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- login page 
+    created for CSC102
+    by Alex Caraway
+    bluedogxl@gmail.com-->
+<html>
+    <head>
+        <title>E Login</title>
+        <script src = "E.js"></script>
+        <!-- now i could make another external stylesheet but that's kind of excessive don't you think 
+        besides i like doing it this way -->
+        <style>
+            body {
+                background-color: gray;
+                color: lightgray;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>welcome to the gray zone</h1>
+        <div id = "loginStatus">please enter your name and id to prove your worth</div>
+        <!-- where you put the stuff you want to submit -->
+        <form id="creditSubmit" onsubmit = "return false">
+        first name: <input type = "text" id = "firstName"><br>
+        last name: <input type = "text" id = "lastName"><br>
+        id: <input type = "number" id="idNumber"><br>
+            <!-- this button submits the stuff to the javascript function-->
+        <input type = "submit" onclick = "checkCreds()">
+        </form>
+    </body>
+</html>
